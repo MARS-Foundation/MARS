@@ -1,4 +1,4 @@
-<p align="center"><img height="200" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Alien01.svg" alt="Alien" /></p>
+<p align="center"><img align="center" height="200" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Alien01.svg" alt="Alien" /></p>
 <h1 align="center">MARS</h1>
 <h3 align="center">Maintainable And Readable Stylesheet</h3>
 <h4 align="center">v.0.0.0</h4>
