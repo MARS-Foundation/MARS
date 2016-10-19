@@ -32,7 +32,7 @@
 
 #### Can I change the directive's rules?
 
-<p style="padding-left: 24px;">Yep! Just make sure, if you're sharing your version, to rename it <code>MARS YOUR_NAME_HERE flavour</code> so others can distinguish it from the <code>vanilla flavour</code> hosted here.</p>
+<p style="padding-left: 24px;">Yep! Just make sure, if you're sharing your version, to rename it <code>MARS YOUR_NAME_HERE flavour/flavor</code> so others can distinguish it from the <code>vanilla flavour/flavor</code> hosted here. You'll, obviously, have to rework the formatter so it fits your flavour/flavor.</p>
 
 <p style="padding-left: 24px;">Refer back to this repo if you choose to alter the rules and re-upload.</p>
 
