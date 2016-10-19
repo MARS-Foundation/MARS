@@ -52,7 +52,7 @@
 
 #### I want to contribute
 
-<p style="padding-left: 24px;">Make sure you read the <a href="contributing.md"></a> file first</p>
+<p style="padding-left: 24px;">Make sure you read the <a href="contributing.md">contributing</a> guideline first</p>
 
 <p style="padding-left: 24px;">File an <a href="/issues">issue here</a> first with the feature you want to add (or work on) to MARS, so people know what's going on!</p>
 
