@@ -1,0 +1,29 @@
+{
+  "name": "mars-formatter",
+  "version": "TBD",
+  "description": "A directive on CSS formatting. That is some interesting stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Blue-EyesWhiteDragon/MARS.git"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "html",
+    "html5",
+    "directive",
+    "less",
+    "sass",
+    "scss"
+  ],
+  "author": "Jack Andrew Loudon <https://github.com/Blue-EyesWhiteDragon>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Blue-EyesWhiteDragon/MARS/issues"
+  },
+  "homepage": "https://github.com/Blue-EyesWhiteDragon/MARS#readme"
+}
