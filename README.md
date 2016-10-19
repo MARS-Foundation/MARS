@@ -20,7 +20,7 @@
 
 <p style="padding-left: 24px;">MARS addresses problems that come with non consistence in ruleset layouts when working between files in/and projects, styling your CSS files in a beautiful and easily navigable structure to your projects.</p>
 
-#### Is MARS a W3C endorsement or standard?
+#### Is MARS an W3C endorsement or standard?
 
 <p style="padding-left: 24px;"><u><strong>No.</strong></u></p>
 
