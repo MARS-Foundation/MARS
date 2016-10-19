@@ -36,7 +36,7 @@
 
 ## So what's this repo then?
 
-<p style="padding-left: 24px;">This is the MARS repo - it contains the <u><strong>MARS Formatter</strong></u>, which is the <a href="https://github.com/MARS-Foundation/MARS/tree/core/npm">npm package</a> in development for creating MARS compliant CSS files. 
+<p style="padding-left: 24px;">This is the MARS repo - it contains the <u><strong><a href="https://github.com/MARS-Foundation/MARS/tree/core/npm">MARS Formatter</a></strong></u>, which is the <a href="https://npmjs.org">npm package</a> in development for creating MARS compliant CSS files. 
 
 ## So where's the actual directive then!?
 
