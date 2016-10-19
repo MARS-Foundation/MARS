@@ -34,11 +34,15 @@
 
 <p style="padding-left: 24px;">Refer back to this repo if you choose to alter the rules and re-upload.</p>
 
-## But... my code is already written :sob:
+## So what's this repo then?
 
-<p style="padding-left: 24px;">There's a <a href="/formatter/">npm package</a> in the works.</p>
+<p style="padding-left: 24px;">This is the MARS repo - it contains the <u><strong>MARS Formatter</strong></u>, which is the <a href="https://github.com/MARS-Foundation/MARS/tree/core/npm">npm package</a> in development for creating MARS compliant CSS files. 
 
-## But I use gulp, grunt, etc...
+## So where's the actual directive then!?
+
+You can find the directive in the <a href="https://github.com/MARS-Foundation/MARS/docs"><code>docs</code></a>.</p>
+
+## I use gulp, grunt, etc...
 
 <p style="padding-left: 24px;">On it. Don't worry.</p>
 
@@ -56,7 +60,21 @@
 
 <p style="padding-left: 24px;">File an <a href="/issues">issue here</a> first with the feature you want to add to MARS, so people know what's going on!</p>
 
-<p style="padding-left: 24px;">Please note: not all issues will result in a feature addition.</p>
+<p style="padding-left: 24px;">Please note: </p>
+
+---
+
+## Things to consider
+
+#### Don't try to pull request a change the directive's rules
+
+<p style="padding-left: 24px;"> Unless of course you're authorised to do so.</p>
+ 
+#### Not all issues will result in a feature addition.
+
+<p style="padding-left: 24px;"> Sorry, not sorry.</p>
+
+---
 
 ###### Footnotes
 
