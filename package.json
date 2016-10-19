@@ -1,7 +1,7 @@
 {
-  "name": "mars-formatter",
-  "version": "TBD",
-  "description": "A directive on CSS formatting. That is some interesting stuff.",
+  "name": "@mars/mars-formatter",
+  "version": "0.0.0",
+  "description": "Formatter for The MARS Directive - A directive on CSS formatting. That is some interesting stuff.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,8 @@
     "url": "git+https://gitlab.com/Blue-EyesWhiteDragon/MARS.git"
   },
   "keywords": [
+    "mars",
+    "formatter",
     "css",
     "css3",
     "html",
