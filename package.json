@@ -1,9 +1,9 @@
 {
-  "name": "@mars/formatter",
+  "name": "mars-formatter",
   "version": "0.0.0",
   "description": "Formatter for The MARS Directive - A directive on CSS formatting. That is some interesting stuff.",
   "main": "index.js",
-  "bin" : {
+  "bin": {
     "mars": "bin/mars.js"
   },
   "scripts": {
@@ -32,6 +32,8 @@
   },
   "homepage": "https://blue-eyeswhitedragon.gitlab.com/mars",
   "dependencies": {
+    "chalk": "^1.1.3",
+    "clean-css": "^3.4.20",
     "commander": "^2.9.0"
   }
 }
