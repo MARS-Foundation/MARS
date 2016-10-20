@@ -33,4 +33,4 @@ node_modules/
 # TEMP IGNORE #
 
 formatter/
-docs/
+test/

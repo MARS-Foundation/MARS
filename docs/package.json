@@ -1,0 +1,23 @@
+{
+  "name": "mars-fomatter-docs",
+  "version": "0.0.0",
+  "description": "(none)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp __build"
+  },
+  "author": "Jack Andrew Loudon",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "vinyl-paths": "^2.1.0"
+  }
+}
