@@ -1,0 +1,57 @@
+/*
+ *
+ */
+
+/* Media Query sizes */
+
+$x-small-size: 40rem;
+$small-size: 50rem;
+$medium-size: 60rem;
+$large-size: 70rem;
+$x-large-size: 80rem;
+
+/* UI base colours */
+
+$primary-color: $oc-blue-7;
+$info-color: $oc-grape-7;
+$success-color: $oc-green-7;
+$warning-color: mix( $oc-yellow-7, $oc-orange-7, 50% );
+$error-color: $oc-red-7;
+$disabled-color: $oc-gray-5;
+$gray-color: $oc-gray-7;
+$grey-color: $gray-color;
+
+/* Typography */
+
+$base-font-family: "Lato", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+$base-font-size: 16px;
+$base-font-weight: normal;
+$base-bg-color: $oc-gray-0;
+$base-text-color: $grey-color;
+$base-text-colour: $base-text-color;
+$base-line-height: 1.5;
+
+$heading-margin: .375rem 0;
+$heading-font-family: "Montserrat", $base-font-family;
+$heading-font-weight: bold;
+$heading-text-color: $oc-gray-7;
+$heading-sub-text-color: $oc-gray-6;
+$heading-line-height: 1.25;
+$heading-font-size-divisory-denominator: 7;
+
+/* Components */
+
+$column-max-width: $medium-size;
+
+$container-max-width: $medium-size;
+
+$navbar-height: 4rem;
+$navbar-max-width: 100%;
+$navbar-padding: 1rem;
+$navbar-bg-color: $oc-gray-8;
+$navbar-bg-image: none;
+$navbar-text-color: $oc-gray-0;
+
+$paragraph-margin: .5rem 0;
+
+$row-max-width: 100%;

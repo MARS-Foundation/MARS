@@ -1,0 +1,7 @@
+mixin section(heading, subheading)
+	section(id="section#{num}").row.container.fluid
+		header.row
+			h3 SECTION #{heading}
+			h6= subheading
+		article.row
+			block content

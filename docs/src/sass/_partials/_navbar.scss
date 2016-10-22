@@ -1,0 +1,140 @@
+/*
+ *
+ */
+
+.navbar {
+	display: flex;
+	position: relative;
+	height: $navbar-height;
+	width: 100%;
+	max-width: $navbar-max-width;
+	margin: auto;
+	padding: $navbar-padding;
+	background-color: $navbar-bg-color;
+	background-image: $navbar-bg-image;
+	color: $navbar-text-color;
+	flex: 0 1 $navbar-height;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	z-index: 2;
+	
+	&.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		
+		+ * {
+			margin-top: $navbar-height;
+		}
+	}
+	
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	
+	._left,
+	._right {
+		height: 100%;
+		width: 100%;
+		line-height: 1;
+		flex: 0 1 50%;
+		user-select: none;
+		
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+			z-index: 3;
+		}
+	}
+	
+	._brand {
+		display: inline-block;
+		height: 100%;
+		padding: .25rem;
+		margin-right: auto;
+		font-size: 1.5rem;
+	}
+	
+	._menu {
+		display: flex;
+		height: 100%;
+		margin-left: auto;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		> ._sub {
+			display: none;
+			margin-left: .5rem;
+			margin-right: .5rem;
+			padding: .5rem;
+			border-bottom: 0px solid $navbar-bg-color;
+			text-align: center;
+			flex: 0 1 6rem;
+			transition: border-bottom .2s ease-in-out;
+			
+			&:first-child {
+				margin-left: 0;
+			}
+			
+			&:last-child {
+				margin-right: 0;
+			}
+			
+			&:hover {
+				border-bottom: 2px solid $navbar-text-color;
+			}
+			
+			@media only screen and (min-width: 40rem) {
+				display: block;
+			}
+			
+			._level {
+				margin: 0;
+				list-style: none;
+			}
+		}
+		
+		@media only screen and (min-width: 40rem) {
+			max-width: 66.67%;
+		}
+	}
+	
+		._hamburger {
+			position: relative;
+			margin-left: auto;
+			flex: 0 0 3rem;
+			> * {
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: .125rem;
+				width: 1.5rem;
+				margin: auto;
+				background-color: $navbar-text-color;
+				
+				&:before,
+				&:after {
+					display: block;
+					position: absolute;
+					height: .125rem;
+					width: 1.5rem;
+					background-color: $navbar-text-color;
+					content: "";
+				}
+				
+				&:before { top: -.375rem; }
+				&:after { top: .375rem; }
+					
+			}
+			
+			@media only screen and (min-width: 40rem) {
+				display: none !important;
+			}
+		}
+	
+}

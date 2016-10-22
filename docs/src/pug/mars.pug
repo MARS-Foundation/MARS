@@ -1,3 +1,179 @@
-include _partials/masthead.pug
-span asswipe
-include _partials/footer.pug
+extends _partials/template.pug
+
+block body
+	header.navbar.sticky
+		div._left
+			div._brand
+				a MARS
+		div._right
+			nav._menu
+				a._hamburger
+				a._sub
+					span selectors
+					ul._level
+						li
+							a introduction
+						li
+							a comments
+						li
+							a selectors
+						li
+							a rules
+						li
+							a states
+						li
+							a modular design
+						li
+							a @ and :</a>
+						li
+							a prefixes
+						li
+							a preprocessors
+						li
+							a conclusions
+				a._sub sections
+				a._sub sections
+				a._sub sections
+	main.container
+		div.row
+			h1
+				a#MARS_0
+				| MARS
+			h3
+				a#Maintainable_And_Readable_Styles_2
+				| Maintainable And Readable Styles
+		hr
+		div.row
+			h4
+				a#Revision_I_6
+				| Revision I
+			p CONTENTS:
+			p
+				a(href='#section-i') SECTION I
+				|  : Introduction
+			p
+				a(href='#section-ii') SECTION II
+				|  : Comments, Documentation, Notes and Licensing
+			p
+				a(href='#section-iii') SECTION III
+				|  : Selectors
+			p
+				a(href='#section-iv') SECTION IV
+				|  : Rules
+			p
+				a(href='#section-v') SECTION V
+				|  :  States
+			p
+				a(href='#section-vi') SECTION VI
+				|  : Modules
+			p
+				a(href='#section-vii') SECTION VI
+				|  : Media Queries, Font Face, Keyframes
+			p
+				a(href='#section-viii') SECTION VII
+				|  : Prefixes
+			p
+				a(href='#section-ix') SECTION VIII
+				|  : Preprocessors
+			p
+				a(href='#section-x') SECTION IX
+				|  :  Conclusion
+		hr
+		+section("I", "An introduction to MARS")
+		+section("II", "Comments, Documentation, Notes and Licenses")
+		+section("III", "Selectors")
+		+section("IV", "Rules")
+		+section("V", "States")
+		+section("VI", "Modules")
+		+section("VII", "The use of @ and :")
+		+section("VIII", "Prefixes")
+		+section("IX", "Preprocessors")
+		+section("X", "Conclusion")
+		//section.row
+			h4
+				a#Section_II_23
+				| Section II
+			p CSS Selectors are to be typed by override vs importance.
+			p Override vs importance can be represented as follows:
+			pre.
+			p
+				code *
+				|  is the least important selector.
+			p
+				code element
+				|  is 2nd least important selector.
+			p
+				code [attr]
+				|  is a neutrally important selector.
+			p
+				code .class
+				|  is a neutrally important selector.
+			p
+				code #id
+				|  is the most important selector.
+			p
+				| Neutrally important selectors can be put in any way order that you decide since they are considered of the same importance as each other.
+			p
+				| The standard way to write 
+				strong MARS CSS
+				|  is in 
+				strong EEACI
+				|  or 
+				strong AEACI
+				|  format (Everything/All Element Attribute Class ID)
+			p
+				strong
+					em If
+				em
+					code element
+				strong
+					em is the least important then why is it at the top of the selection order?
+			p
+				| This is because of the fact that rules that come later in a CSS file override later rules.
+			p
+				strong
+					em But # selectors are considered more important by browsers.
+			p Yes true, but when you usually write CSS you start of with; for example:
+			pre.
+			p
+				| You may argue that the most important should appear at the top but 
+				strong MARS CSS
+				|  sees it differently. Imagine a 
+				strong DOM tree
+				|  for example:
+			p
+				code *
+				|  is always present. (Least important rule, easy to override)
+			p
+				code element
+				|  is only present if the element tag is written in the corresponding HTML
+			p
+				code [attr]
+				|  every 
+				code *
+				|  or 
+				code element
+				|  will have this selector if it has 
+				code .class
+				|  so hence why 
+				code class
+				|  and 
+				code [attr]
+				|  are interchangeable. However 
+				code .class
+				|  is prefered to be classed as more important due to it only referring to a specific attribute not a range of attributes and/or their values, which can be shared by a variety of elements. E.g.
+			pre.
+			p
+				code .class
+			p
+				code #id
+			p
+				| Since 
+				code element
+				|  selectors are usually the ones to be overriden or to be parent selectors; e.g.
+			pre.
+			p
+				| This means that, in 
+				strong MARS CSS
+				| , they must be declared first.
+	footer.footer

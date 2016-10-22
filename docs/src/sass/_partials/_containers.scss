@@ -1,0 +1,47 @@
+/*
+ *
+ */
+
+.column, .container {
+	width: 100%;
+	margin: auto;
+	z-index: 1;
+	@include createClearfix();
+	
+	&.flex {
+		display: flex;
+		> * {
+			flex: 0 1 auto;
+		}
+		> .column, .container {
+			flex: 1 1 auto;
+		}
+	}
+	
+	&.fluid {
+		max-width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+.column {
+	max-width: $column-max-width;
+	
+	&.flex {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+.container {
+	max-width: $container-max-width;
+}
+
+.row {
+	width: 100%;
+	max-width: $row-max-width;
+	z-index: 1;
+	@include createClearfix();
+}
+

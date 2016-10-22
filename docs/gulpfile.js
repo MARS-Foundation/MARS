@@ -29,14 +29,14 @@ var paths = {
 if (isDevelopment) { paths.build = paths.dev; }
 
 var plumberErrorHandler = function( err ) { console.log("Plumber caught:\n" + err); this.emit("end"); },
-	writeToBuild = function ( stream ) {
+	writeToBuild = function ( stream, dir ) {
 		return stream
 	    .pipe( autoprefixer( { browsers : "last 2 versions" } ) )
 	    .pipe( sourcemaps.write() )
-	    .pipe( gulp.dest(paths.build + "css/") )
+	    .pipe( gulp.dest(paths.build + dir) )
 	    .pipe( rename( { extname : ".min.css" } ) )
 	    .pipe( minimiser() )
-	    .pipe( gulp.dest(paths.build + "css/") );
+	    .pipe( gulp.dest(paths.build + dir) );
 	};
 
 /* Build and Watch Tasks */
@@ -46,7 +46,11 @@ var plumberErrorHandler = function( err ) { console.log("Plumber caught:\n" + er
 var cleanDir = function ( dir ) {
 	var currentPath;
 	if ( typeof dir === "undefined" ) currentPath = paths.build;
-	else if (isDevelopment) currentPath = paths.build + dir.replace(/\/+$/, "") + "/";
+	else if (isDevelopment) {
+		currentPath = paths.build + dir.replace(/\/+$/, "");
+		if ( dir.indexOf("*") > -1 ) currentPath = currentPath;
+		else currentPath += "/";
+	}
 	console.log("Cleaning build folder: \"" + currentPath + "\"");
 	return (
 		gulp
@@ -56,15 +60,15 @@ var cleanDir = function ( dir ) {
 };
 
 gulp.task("__clean-css", function () {
-	return cleanDir("css");
+	return cleanDir("assets/css");
 });
 
 gulp.task("__clean-pug", function () {
-	return cleanDir("pug");
+	return cleanDir("*.html");
 });
 
 gulp.task("__clean-all", function () {
-	return cleanDir();
+	return cleanDir("*");
 });
 
 gulp.task("__clean", ["__clean-pug", "__clean-css"]);
@@ -87,7 +91,8 @@ gulp.task("__build-task-sass", function () {
 		    .src( paths.src + "sass/*.scss" )
 		    .pipe( plumber( plumberErrorHandler ) )
 		    .pipe( sourcemaps.init() )
-		    .pipe( sass( { outputStyle : "expanded" } ) )
+		    .pipe( sass( { outputStyle : "expanded" } ) ),
+		"assets/css/"
 	);
 });
 
